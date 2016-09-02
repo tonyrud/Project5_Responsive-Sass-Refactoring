@@ -1,0 +1,207 @@
+
+@import 'https://fonts.googleapis.com/css?family=Prompt:300,500,700';
+
+/**********************
+Global Layout Set-up
+**********************/
+
+* { 
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+  color: #444;
+  background: #ddd;
+	font-weight: 300;
+}
+
+
+a {
+	text-decoration: none;
+	color: #444;
+}
+
+a:hover {
+  color: #36acd0;
+}
+
+.nav li:hover {
+	background: #fff;	
+} 
+
+h2 {
+	font-size: 1.9em;
+}
+
+.section {
+	margin: 0 auto;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+/**********************
+Navigation Set-up
+**********************/
+header {
+	text-align: center;
+	max-width: 600px;
+		font-size: .8em;
+}
+
+.nav {
+  padding: 0;
+	font-weight: 700;
+
+}
+
+header h1 {
+	margin: 1em;
+}
+
+.nav li {
+	font-size: 1.3em;
+	background-color: #eee;
+	margin: 3px 2%;
+	text-transform: uppercase;
+}
+
+.nav a {
+		padding: 10px;
+		display: block;
+}
+
+/**********************
+Bio Set-up
+**********************/
+
+.bio {
+	margin-top: 30px;
+	max-width: 600px;
+}
+
+.bio .profile-image {
+	width: 60%;
+	max-width: 300px;
+	/*border: 3px solid red;*/
+	border-radius: 5%;
+}
+
+.bio p {
+	padding: 30px 20px;
+}
+
+/**********************
+Portfolio Set-up and Skills
+**********************/
+
+.portfolio,
+.skills {
+	margin-top: 40px;
+	max-width: 600px;
+}
+
+.container {
+	margin: 30px 0;
+}
+
+.portfolio-image {
+	max-width: 1400px;
+	width: 100%;
+	padding: 0 10px;
+}
+
+.portfolio-label {
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+.portfolio-text {
+	font-weight: 100;
+	padding: 10px 40px;
+}
+
+.line {
+	margin: 25px auto;
+	height:1px;
+	background:#eee;
+	border-bottom:1px solid #888;
+	width: 70%;
+}
+
+/**********************
+Contact Set-up
+**********************/
+.contact {
+	margin-top: 10px; 
+}
+
+.contact p {
+	padding: 10px 40px;
+}
+
+.contact ul {
+	text-align: center;
+	padding: 0;
+}
+
+.contact ul li {
+	text-align: center;
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+.contact .contact-link {
+	padding-left: 20px;
+	font-weight: 700;
+		color: #444;
+}
+
+/**********************
+Footer Set-up
+**********************/
+.footer-line {
+	height:1px;
+	background:#eee;
+	border-bottom:1px solid rgba(0,0,0,.2);
+	width: 100%;
+	margin: 0 auto;
+}
+
+footer {
+	margin: 0 auto;
+  max-width: 1000px;
+  min-height: 70px;
+  padding: 5px 25px;
+}
+
+footer ul {
+	display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 15px;
+	
+}
+
+footer ul li {
+	padding: 0;
+	margin: 10px;
+	display: flex;
+  justify-content: center;
+  flex-direction: column;
+	font-weight: bold;
+}
+
+footer ul li:first-child {
+  margin-right: auto;
+}
+
+

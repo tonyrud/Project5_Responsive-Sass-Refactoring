@@ -1,0 +1,118 @@
+/**********************
+Responsive 768px
+**********************/
+
+@media screen and (min-width: 768px) {
+	.nav {
+		font-weight: 300;
+		/*width: 500px;*/
+	}
+	
+	.nav li {
+			font-size: 1.3em;
+			background-color: #ddd;
+			margin: 3px 2%;
+			display: inline-block;
+	}
+	
+	a:hover {
+  color: #36acd0;
+}
+
+.nav li:hover {
+	background: #ddd;	
+} 
+	
+	.bio {
+		overflow: hidden;
+		max-width: 1000px;
+		padding: 10px
+	}
+	
+	.bio .profile-image {
+		float: right;
+		width: 40%;
+		max-width: 400px;
+		padding: 10px;
+		border-radius: 0;
+	}
+	
+	.bio p {
+		text-align: left;
+		padding: 0 0 0 30px;
+		width: 50%;
+		float: left;
+	}
+		/**********************
+		Portfolio
+		**********************/
+		
+	.portfolio,
+	.skills {
+		max-width: 1000px;
+		overflow: hidden;
+	}
+	
+	.skills {
+		margin-top: 0;
+	}
+
+	.portfolio .container,
+	.skills .container {
+		width: 50%;
+		float: left;
+	}
+	
+	.container p {
+		margin: 0 auto;
+		max-width: 400px;
+
+	}
+	
+	.skills .container .portfolio-text {
+				height: 170px;
+	}
+	
+	.contact {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+}
+
+/**********************
+Responsive 1024px
+**********************/
+
+@media screen and (min-width: 1024px) {
+	
+	header {
+		max-width: 1000px;
+	}
+	
+	.main-group {
+		overflow: hidden;
+		margin: 0;
+	}
+	
+	header h1 {
+		/*display: inline-block;*/
+		padding: 0;
+		float: left;
+		margin: .5em 2em;
+	}
+	
+	
+	.nav {
+		padding: 0;
+		width: 500px;
+		float: right;
+	}
+	
+	/*.nav li {
+		margin: ;
+	}*/
+	
+		.portfolio .container {
+		width: 33%;
+	}	
+}
