@@ -1,0 +1,27 @@
+/**********************
+Contact Set-up
+**********************/
+.contact {
+	margin-top: 10px;
+
+	p {
+	 padding: 10px 40px;
+ }
+ ul {
+	 @extend %centered;
+	 padding: 0;
+
+	 li {
+		 @extend %centered;
+		 padding: 10px;
+		 font-size: 1.2em;
+	 }
+ }
+
+ .contact-link {
+ 	padding-left: 20px;
+ 	font-weight: 700;
+ 		color: $mainFontColor;
+ }
+
+}

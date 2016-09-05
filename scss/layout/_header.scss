@@ -1,0 +1,30 @@
+/**********************
+Navigation Set-up
+**********************/
+header {
+	text-align: center;
+	max-width: 600px;
+		font-size: .8em;
+}
+
+.nav {
+  padding: 0;
+	font-weight: 700;
+
+}
+
+header h1 {
+	margin: 1em;
+}
+
+.nav li {
+	font-size: 1.3em;
+	background-color: #eee;
+	margin: 3px 2%;
+	text-transform: uppercase;
+}
+
+.nav a {
+		padding: 10px;
+		display: block;
+}

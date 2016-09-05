@@ -1,0 +1,31 @@
+/**********************
+Portfolio Set-up and Skills
+**********************/
+
+.portfolio,
+.skills {
+	margin-top: 40px;
+	max-width: 600px;
+}
+
+.container {
+	margin: 30px 0;
+}
+
+.portfolio-label {
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+.portfolio-text {
+	font-weight: 100;
+	padding: 10px 40px;
+}
+
+.line {
+	margin: 25px auto;
+	height:1px;
+	background:#eee;
+	border-bottom:1px solid #888;
+	width: 70%;
+}

@@ -1,0 +1,39 @@
+/* Base Styles -------------------- */
+
+* {
+  box-sizing : border-box;
+}
+
+body {
+  @extend       %centered;
+  padding     : 0;
+  color       : $mainFontColor;
+  background  : $background;
+  font-family : $fonts;
+  font-weight : 300;
+}
+
+a {
+  color           : $mainFontColor;
+  text-decoration : none;
+
+  &:hover {
+    color : $blue;
+  }
+}
+
+.nav li:hover {
+  background : $white;
+}
+
+h2 {
+  font-size : 1.9em;
+}
+
+.section {
+  @extend %marginAuto;
+}
+
+li {
+  list-style-type : none;
+}
