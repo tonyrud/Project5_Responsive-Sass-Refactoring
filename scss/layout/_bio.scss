@@ -3,10 +3,24 @@ Bio Set-up
 **********************/
 
 .bio {
-	margin-top: 30px;
 	max-width: 600px;
+
+	@media #{$break-narrow} {
+		overflow: hidden;
+		max-width: 1000px;
+		padding: 10px;
+		margin-top: 30px;
+	}
 
 	p {
 		padding: 30px 20px;
+
+		@media #{$break-narrow} {
+			text-align: left;
+			padding: 10px;
+			width: 50%;
+			float: left;
+			margin-top: 0;
+		}
 	}
 }

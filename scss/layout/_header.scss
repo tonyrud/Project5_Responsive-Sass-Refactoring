@@ -1,30 +1,21 @@
-/**********************
-Navigation Set-up
-**********************/
+/* ******************** Navigation Set-up ******************** */
+
 header {
-	text-align: center;
-	max-width: 600px;
-		font-size: .8em;
-}
+  max-width  : 600px;
+  text-align : center;
+  font-size  : .8em;
 
-.nav {
-  padding: 0;
-	font-weight: 700;
+  @media #{$break-wide} {
+      max-width: 1000px;
+  }
 
-}
+  h1 {
+    margin : 1em;
 
-header h1 {
-	margin: 1em;
-}
-
-.nav li {
-	font-size: 1.3em;
-	background-color: #eee;
-	margin: 3px 2%;
-	text-transform: uppercase;
-}
-
-.nav a {
-		padding: 10px;
-		display: block;
+    @media #{$break-wide} {
+      padding: 0;
+      float: left;
+      margin: .5em 2em;
+    }
+  }
 }

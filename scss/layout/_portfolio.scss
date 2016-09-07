@@ -1,31 +1,64 @@
 /**********************
 Portfolio Set-up and Skills
 **********************/
-
 .portfolio,
 .skills {
 	margin-top: 40px;
 	max-width: 600px;
+	@media #{$break-narrow} {
+		max-width: 1000px;
+		overflow: hidden;
+	}
+
+	.container {
+		margin: 30px 0;
+
+		p {
+			@media #{$break-narrow} {
+				margin: 0 auto;
+				max-width: 400px;
+				padding: 20px;
+			}
+		}
+		@media #{$break-narrow} {
+			width: 50%;
+			float: left;
+		}
+
+	}
 }
 
-.container {
-	margin: 30px 0;
+.skills {
+	.portfolio-label {
+		font-size: 1.2em;
+		font-weight: 400;
+	}
+
+	.portfolio-text {
+		font-weight: 100;
+		padding: 10px 40px;
+		@media #{$break-narrow} {
+			height: 170px;
+		}
+	}
+	@media #{$break-narrow} {
+		margin-top: 0;
+	}
 }
 
-.portfolio-label {
-	font-size: 1.2em;
-	font-weight: 400;
-}
+.main-group {
 
-.portfolio-text {
-	font-weight: 100;
-	padding: 10px 40px;
+	@media #{$break-wide} {
+		overflow: hidden;
+		margin: 0;
+	}
+
 }
 
 .line {
 	margin: 25px auto;
-	height:1px;
-	background:#eee;
-	border-bottom:1px solid #888;
+	height: 1px;
+	background: #eee;
+	border-bottom: 1px solid #888;
 	width: 70%;
 }

@@ -27,7 +27,16 @@ li {
 .bio .profile-image {
   width: 60%;
   max-width: 300px;
-  border-radius: 5%; }
+  border-radius: 5px;
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    .bio .profile-image {
+      float: right;
+      width: 40%;
+      max-width: 400px;
+      padding: 10px;
+      border-radius: 0;
+      margin-top: 0px; } }
 
 .portfolio-image {
   max-width: 1400px;
@@ -43,39 +52,103 @@ body, .contact ul, .contact ul li {
 .footer-line {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
-/**********************
-Navigation Set-up
-**********************/
-header {
-  text-align: center;
-  max-width: 600px;
-  font-size: .8em; }
+/* ******************** Mobile icon ******************** */
+.icon {
+  background: black;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  top: 0px; }
+  @media (min-width: 768px) {
+    .icon {
+      display: none; } }
 
+.hamburger {
+  background-color: #fff;
+  height: 2px;
+  left: 10px;
+  top: -14px;
+  position: absolute;
+  transition: all 0.75s cubic-bezier(1, -0.3, 0.35, 1.335);
+  width: 30px; }
+
+.line1 {
+  transform: translateY(30px); }
+
+.line2 {
+  transform: translateY(40px) scaleX(1); }
+
+.line3 {
+  transform: translateY(50px); }
+
+/* ******************** Navigation ******************** */
 .nav {
+  display: none;
   padding: 0;
   font-weight: 700; }
+  @media (min-width: 768px) {
+    .nav {
+      font-weight: 300;
+      display: block; } }
+  @media (min-width: 1024px) {
+    .nav {
+      padding: 0;
+      width: 500px;
+      float: right; } }
+  .nav li {
+    margin: 3px 2%;
+    background-color: #eee;
+    text-transform: uppercase;
+    font-size: 1.3em; }
+    @media (min-width: 768px) {
+      .nav li {
+        font-size: 1.3em;
+        background-color: #ddd;
+        margin: 3px 2%;
+        display: inline-block; }
+        .nav li:hover {
+          background: #ddd; } }
+  .nav a {
+    display: block;
+    padding: 10px; }
 
-header h1 {
-  margin: 1em; }
-
-.nav li {
-  font-size: 1.3em;
-  background-color: #eee;
-  margin: 3px 2%;
-  text-transform: uppercase; }
-
-.nav a {
-  padding: 10px;
-  display: block; }
+/* ******************** Navigation Set-up ******************** */
+header {
+  max-width: 600px;
+  text-align: center;
+  font-size: .8em; }
+  @media (min-width: 1024px) {
+    header {
+      max-width: 1000px; } }
+  header h1 {
+    margin: 1em; }
+    @media (min-width: 1024px) {
+      header h1 {
+        padding: 0;
+        float: left;
+        margin: .5em 2em; } }
 
 /**********************
 Bio Set-up
 **********************/
 .bio {
-  margin-top: 30px;
   max-width: 600px; }
+  @media (min-width: 768px) {
+    .bio {
+      overflow: hidden;
+      max-width: 1000px;
+      padding: 10px;
+      margin-top: 30px; } }
   .bio p {
     padding: 30px 20px; }
+    @media (min-width: 768px) {
+      .bio p {
+        text-align: left;
+        padding: 10px;
+        width: 50%;
+        float: left;
+        margin-top: 0; } }
 
 /**********************
 Portfolio Set-up and Skills
@@ -84,17 +157,43 @@ Portfolio Set-up and Skills
 .skills {
   margin-top: 40px;
   max-width: 600px; }
+  @media (min-width: 768px) {
+    .portfolio,
+    .skills {
+      max-width: 1000px;
+      overflow: hidden; } }
+  .portfolio .container,
+  .skills .container {
+    margin: 30px 0; }
+    @media (min-width: 768px) {
+      .portfolio .container p,
+      .skills .container p {
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 20px; } }
+    @media (min-width: 768px) {
+      .portfolio .container,
+      .skills .container {
+        width: 50%;
+        float: left; } }
 
-.container {
-  margin: 30px 0; }
-
-.portfolio-label {
+.skills .portfolio-label {
   font-size: 1.2em;
   font-weight: 400; }
-
-.portfolio-text {
+.skills .portfolio-text {
   font-weight: 100;
   padding: 10px 40px; }
+  @media (min-width: 768px) {
+    .skills .portfolio-text {
+      height: 170px; } }
+@media (min-width: 768px) {
+  .skills {
+    margin-top: 0; } }
+
+@media (min-width: 1024px) {
+  .main-group {
+    overflow: hidden;
+    margin: 0; } }
 
 .line {
   margin: 25px auto;
@@ -108,6 +207,10 @@ Contact Set-up
 **********************/
 .contact {
   margin-top: 10px; }
+  @media (min-width: 768px) {
+    .contact {
+      max-width: 70%;
+      margin: 0 auto; } }
   .contact p {
     padding: 10px 40px; }
   .contact ul {

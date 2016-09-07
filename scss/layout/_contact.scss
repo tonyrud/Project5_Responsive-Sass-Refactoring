@@ -3,25 +3,29 @@ Contact Set-up
 **********************/
 .contact {
 	margin-top: 10px;
+	@media #{$break-narrow} {
+		max-width: 70%;
+		margin: 0 auto;
+	}
 
 	p {
-	 padding: 10px 40px;
- }
- ul {
-	 @extend %centered;
-	 padding: 0;
+		padding: 10px 40px;
+	}
 
-	 li {
-		 @extend %centered;
-		 padding: 10px;
-		 font-size: 1.2em;
-	 }
- }
+	ul {
+		@extend %centered;
+		padding: 0;
 
- .contact-link {
- 	padding-left: 20px;
- 	font-weight: 700;
- 		color: $mainFontColor;
- }
+		li {
+			@extend %centered;
+			padding: 10px;
+			font-size: 1.2em;
+		}
+	}
 
+	.contact-link {
+		padding-left: 20px;
+		font-weight: 700;
+		color: $mainFontColor;
+	}
 }

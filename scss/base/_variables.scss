@@ -9,3 +9,8 @@ $lineColor     : rgba(0,0,0,.2);
 $lineWidth     : 100%;
 
 $fonts         : 'Open Sans', sans-serif;
+
+// Media query breakpoints
+
+$break-narrow: '(min-width: 768px)';
+$break-wide: '(min-width: 1024px)';
