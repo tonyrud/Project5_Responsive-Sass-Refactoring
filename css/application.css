@@ -64,7 +64,7 @@ li {
     .icon {
       display: none; } }
   .icon .hamburger {
-    transition: all 0.75s cubic-bezier(1, -0.3, 0.35, 1.335);
+    transition: all 0.55s cubic-bezier(1, -0.3, 0.35, 1.335);
     position: absolute;
     top: -14px;
     left: 10px;
