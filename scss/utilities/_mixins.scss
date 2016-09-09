@@ -1,0 +1,11 @@
+//animation mixin
+@mixin transAnimation($timing, $easing) {
+  transition: all $timing $easing;
+}
+
+@mixin accentLine($lHeight, $lWidth) {
+  @extend      %marginAuto;
+  @extend      %borderbottom;
+  width      : $lWidth;
+  height     : $lHeight;
+}

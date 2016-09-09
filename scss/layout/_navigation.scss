@@ -1,7 +1,7 @@
 
 /* ******************** Mobile icon ******************** */
 .icon {
-	background: black;
+	background: darken($white, 5%);
 	height: 50px;
 	width: 50px;
 	position: absolute;
@@ -13,38 +13,40 @@
 }
 
 .hamburger {
-  background-color: #fff;
+	@include transAnimation($animSpeed, $animEasing);
+	background-color: $mainFontColor;
   height: 2px;
   left: 10px;
 	top: -14px;
   position: absolute;
-  transition: all 0.75s cubic-bezier(1, -0.3, 0.35, 1.335);
   width: 30px;
 }
 
-.line1{
+.line-top {
   transform: translateY(30px);
 }
-.line2{
+.line-mid{
   transform: translateY(40px) scaleX(1);
 }
-.line3{
+.line-bottom{
   transform: translateY(50px);
 }
 
-// .hb1{
-//   transform: translateY(40px) rotate(45deg) scaleX(0.8);
-// }
-// #nav-toggle:checked + #nav-toggle-button .hb2{
-//   transform: translateY(40px) scaleX(0);
-// }
-// #nav-toggle:checked + #nav-toggle-button .hb3{
-//   transform: translateY(40px) rotate(-45deg) scaleX(0.8);
-// }
+.line-top-anim {
+  transform: translateY(40px) rotate(45deg) ;
+}
+
+.line-mid-anim {
+	transform: translateY(40px) scale(0);
+}
+
+.line-bottom-anim {
+  transform: translateY(40px) rotate(-45deg);
+}
 
 
 
-/* ******************** Navigation ******************** */
+/* ******************** Navigation look ******************** */
 
 .nav {
   display: none;
@@ -65,18 +67,18 @@
 
   li {
     margin           : 3px 2%;
-    background-color : #eee;
+    background-color : darken($white, 5%);
     text-transform   : uppercase;
     font-size        : 1.3em;
 
     @media #{$break-narrow} {
       font-size: 1.3em;
-      background-color: #ddd;
+      background-color: $background;
       margin: 3px 2%;
       display: inline-block;
 
       &:hover {
-      	background: #ddd;
+      	background: $background;
       }
     }
 

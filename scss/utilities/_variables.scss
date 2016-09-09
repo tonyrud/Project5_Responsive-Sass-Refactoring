@@ -5,12 +5,18 @@ $white         : #fff;
 $mainFontColor : #444;
 $blue          : #36acd0;
 
-$lineColor     : rgba(0,0,0,.2);
-$lineWidth     : 100%;
+$lineWidth     : 70%;
+$footerLineColor     : rgba(0,0,0,.2);
+$footerLineWidth     : 100%;
+
 
 $fonts         : 'Open Sans', sans-serif;
 
-// Media query breakpoints
+//Animation setup
+$animSpeed: .75s;
+$animEasing: cubic-bezier(1, -0.3, 0.35, 1.335);
 
+
+// Media query breakpoints
 $break-narrow: '(min-width: 768px)';
 $break-wide: '(min-width: 1024px)';

@@ -5,14 +5,26 @@ $(document).ready(function() {
     ******************/
     var $nav = $('.nav');
     var $icon = $('.icon');
-    var animSlideSpeed = 500;
+    var animSlideSpeed = 400;
+    var lineTop = $('.line-top');
+    var lineMid = $('.line-mid');
+    var lineBottom = $('.line-bottom');
 
+    //click event for nav icon
     $icon.click(function(event) {
-      $nav.slideToggle(animSlideSpeed, function() {
-        console.log('animation ended');
+      var style = $nav.css('display');
 
+      lineTop.toggleClass('line-top-anim');
+      lineMid.toggleClass('line-mid-anim');
+      lineBottom.toggleClass('line-bottom-anim');
+
+      $nav.slideToggle(animSlideSpeed, function() {
+        // add end animation code here
+        if(style !== "none"){
+          $nav.css('display','');
+        }
       });
-      console.log('icon clicked');
+
     });
 
     //nav.hide();

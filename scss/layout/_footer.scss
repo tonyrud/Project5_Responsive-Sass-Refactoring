@@ -1,15 +1,9 @@
 /* ******************** Footer Set-up ******************** */
 
-@mixin footer-line($lHeight, $lWidth, $bgColor) {
-  @extend      %marginAuto;
-  @extend      %borderbottom;
-  width      : $lWidth;
-  height     : $lHeight;
-  background : $bgColor;
-}
+
 
 .footer-line {
-  @include footer-line(1px, $lineWidth, $white);
+  @include accentLine(1px, $footerLineWidth);
 }
 
 footer {
