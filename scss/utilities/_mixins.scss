@@ -1,11 +1,26 @@
 //animation mixin
-@mixin transAnimation($timing, $easing) {
+@mixin translateAnim($timing, $easing) {
   transition: all $timing $easing;
 }
 
+//accent line
 @mixin accentLine($lHeight, $lWidth) {
   @extend      %marginAuto;
   @extend      %borderbottom;
   width      : $lWidth;
   height     : $lHeight;
 }
+
+
+//media query mixins
+// @mixin tabletBreak {
+//   @media #{$break-narrow} {
+//     @content;
+//   }
+// }
+//
+// @mixin desktop {
+//   @media #{$break-wide} {
+//     @content;
+//   }
+// }

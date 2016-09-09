@@ -1,92 +1,86 @@
+/* ******************* Mobile icon ******************** */
 
-/* ******************** Mobile icon ******************** */
 .icon {
-	background: darken($white, 5%);
-	height: 50px;
-	width: 50px;
-	position: absolute;
-	right: 0px;
-	top: 0px;
-  @media #{$break-narrow} {
-      display: none;
-  }
+		position   : absolute;
+		top        : 0px;
+		right      : 0px;
+		width      : 50px;
+		height     : 50px;
+		background : darken($white, 5%);
+		@media #{$break-narrow} {
+				display : none;
+		}
+
+		.hamburger {
+				@include           translateAnim($animSpeed, $animEasing);
+				position         : absolute;
+				top              : -14px;
+				left             : 10px;
+				width            : 30px;
+				height           : 2px;
+				background-color : $mainFontColor;
+		}
+
+		.line-top {
+				transform : translateY(30px);
+		}
+
+		.line-mid {
+				transform : translateY(40px) scaleX(1);
+		}
+
+		.line-bottom {
+				transform : translateY(50px);
+		}
+
+		.line-top-anim {
+				transform : translateY(40px) rotate(45deg);
+		}
+
+		.line-mid-anim {
+				transform : translateY(40px) scale(0);
+		}
+
+		.line-bottom-anim {
+				transform : translateY(40px) rotate(-45deg);
+		}
 }
 
-.hamburger {
-	@include transAnimation($animSpeed, $animEasing);
-	background-color: $mainFontColor;
-  height: 2px;
-  left: 10px;
-	top: -14px;
-  position: absolute;
-  width: 30px;
-}
-
-.line-top {
-  transform: translateY(30px);
-}
-.line-mid{
-  transform: translateY(40px) scaleX(1);
-}
-.line-bottom{
-  transform: translateY(50px);
-}
-
-.line-top-anim {
-  transform: translateY(40px) rotate(45deg) ;
-}
-
-.line-mid-anim {
-	transform: translateY(40px) scale(0);
-}
-
-.line-bottom-anim {
-  transform: translateY(40px) rotate(-45deg);
-}
-
-
-
-/* ******************** Navigation look ******************** */
+/* ******************* Navigation look ******************** */
 
 .nav {
-  display: none;
-  padding     : 0;
-  font-weight : 700;
+		display     : none;
+		padding     : 0;
+		font-weight : 700;
+		@media #{$break-narrow} {
+				display     : block;
+				font-weight : 300;
+		}
+		@media #{$break-wide} {
+				width   : 500px;
+				float   : right;
+				padding : 0;
+		}
 
-  @media #{$break-narrow} {
-      font-weight: 300;
-      display: block;
-  }
+		li {
+				margin           : 3px 2%;
+				background-color : darken($white, 5%);
+				text-transform   : uppercase;
+				font-size        : 1.3em;
+				@media #{$break-narrow} {
+						display          : inline-block;
+						margin           : 3px 2%;
+						background-color : $background;
+						font-size        : 1.3em;
 
-  @media #{$break-wide} {
-    padding: 0;
-    width: 500px;
-    float: right;
-  }
+						&:hover {
+								background : $background;
+						}
+				}
+		}
 
-
-  li {
-    margin           : 3px 2%;
-    background-color : darken($white, 5%);
-    text-transform   : uppercase;
-    font-size        : 1.3em;
-
-    @media #{$break-narrow} {
-      font-size: 1.3em;
-      background-color: $background;
-      margin: 3px 2%;
-      display: inline-block;
-
-      &:hover {
-      	background: $background;
-      }
-    }
-
-
-  }
-
-  a {
-    display : block;
-    padding : 10px;
-  }
+		a {
+				display : block;
+				padding : 10px;
+		}
 }

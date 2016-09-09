@@ -31,7 +31,7 @@ Portfolio Set-up and Skills
 
 .skills {
 	.portfolio-label {
-		font-size: 1.2em;
+		font-size: $portfolioFontSize;
 		font-weight: 400;
 	}
 
@@ -58,9 +58,4 @@ Portfolio Set-up and Skills
 
 .line {
 	@include accentLine(1px, $lineWidth);
-	// margin: 25px auto;
-	// height: 1px;
-	// background: #eee;
-	// border-bottom: 1px solid #888;
-	// width: 70%;
 }
