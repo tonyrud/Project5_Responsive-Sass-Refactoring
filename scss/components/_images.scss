@@ -4,7 +4,8 @@
 	border-radius: 5px;
 	margin-top: 30px;
 
-	@media #{$break-narrow} {
+	@include mQuery(mobile){
+	//@media #{$break-narrow}
 		float: right;
 		width: 40%;
 		max-width: 400px;

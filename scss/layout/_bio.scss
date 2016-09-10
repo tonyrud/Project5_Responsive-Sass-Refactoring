@@ -5,7 +5,7 @@ Bio Set-up
 .bio {
 	max-width: 600px;
 
-	@media #{$break-narrow} {
+	@include mQuery(mobile) {
 		overflow: hidden;
 		max-width: 1000px;
 		padding: 10px;
@@ -15,7 +15,7 @@ Bio Set-up
 	p {
 		padding: 30px 20px;
 
-		@media #{$break-narrow} {
+		@include mQuery(mobile) {
 			text-align: left;
 			padding: 10px;
 			width: 50%;

@@ -7,7 +7,7 @@
 		width      : 50px;
 		height     : 50px;
 		background : darken($white, 5%);
-		@media #{$break-narrow} {
+		@include mQuery(mobile) {
 				display : none;
 		}
 
@@ -52,11 +52,11 @@
 		display     : none;
 		padding     : 0;
 		font-weight : 700;
-		@media #{$break-narrow} {
+		@include mQuery(mobile) {
 				display     : block;
 				font-weight : 300;
 		}
-		@media #{$break-wide} {
+		@include mQuery(desktop) {
 				width   : 500px;
 				float   : right;
 				padding : 0;
@@ -67,7 +67,7 @@
 				background-color : darken($white, 5%);
 				text-transform   : uppercase;
 				font-size        : 1.3em;
-				@media #{$break-narrow} {
+				@include mQuery(mobile) {
 						display          : inline-block;
 						margin           : 3px 2%;
 						background-color : $background;

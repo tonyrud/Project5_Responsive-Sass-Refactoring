@@ -3,7 +3,7 @@ Contact Set-up
 **********************/
 .contact {
 	margin-top: 10px;
-	@media #{$break-narrow} {
+	@include mQuery(mobile) {
 		max-width: 70%;
 		margin: 0 auto;
 	}

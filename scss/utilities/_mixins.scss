@@ -1,26 +1,35 @@
-//animation mixin
-@mixin translateAnim($timing, $easing) {
-  transition: all $timing $easing;
-}
 
-//accent line
+
 @mixin accentLine($lHeight, $lWidth) {
-  @extend      %marginAuto;
-  @extend      %borderbottom;
-  width      : $lWidth;
-  height     : $lHeight;
+  @extend   %marginAuto;
+  @extend   %borderbottom;
+  width   : $lWidth;
+  height  : $lHeight;
 }
 
+// media query mixin
+@mixin mQuery($break) {
+  @if $break == mobile {
+    @media (min-width: $break-narrow) {
+       @content;
+     }
+  }  @else if $break == desktop {
+    @media (min-width: $break-wide){
+      @content
+    }
+  }
+}
 
-//media query mixins
+// animation mixin
+
+@mixin translateAnim($timing, $easing) {
+  transition : all $timing $easing;
+}
+
+// accent line
+
+
+
 // @mixin tabletBreak {
-//   @media #{$break-narrow} {
-//     @content;
-//   }
-// }
-//
-// @mixin desktop {
-//   @media #{$break-wide} {
-//     @content;
-//   }
-// }
+
+// @media #{$break-narrow

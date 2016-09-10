@@ -5,7 +5,7 @@ Portfolio Set-up and Skills
 .skills {
 	margin-top: 40px;
 	max-width: 600px;
-	@media #{$break-narrow} {
+	@include mQuery(mobile) {
 		max-width: 1000px;
 		overflow: hidden;
 	}
@@ -13,13 +13,13 @@ Portfolio Set-up and Skills
 	.container {
 		margin: 30px 0;
 
-		@media #{$break-narrow} {
+		@include mQuery(mobile) {
 			width: 50%;
 			float: left;
 		}
 
 		p {
-			@media #{$break-narrow} {
+			@include mQuery(mobile) {
 				margin: 0 auto;
 				padding: 20px;
 			}
@@ -38,18 +38,18 @@ Portfolio Set-up and Skills
 	.portfolio-text {
 		font-weight: 100;
 		padding: 10px 40px;
-		@media #{$break-narrow} {
+		@include mQuery(mobile) {
 			height: 170px;
 		}
 	}
-	@media #{$break-narrow} {
+	@include mQuery(mobile) {
 		margin-top: 0;
 	}
 }
 
 .main-group {
 
-	@media #{$break-wide} {
+	@include mQuery(desktop) {
 		overflow: hidden;
 		margin: 0;
 	}
